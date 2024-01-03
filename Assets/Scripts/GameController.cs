@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -5,7 +6,10 @@ using UnityEngine.XR;
 using TMPro;
 using UnityEngine.SceneManagement;
 using Unity.Netcode;
+using Unity.Services.Authentication;
+using Unity.Services.Core;
 using Unity.Services.Vivox;
+using System.Threading.Tasks;
 
 public class GameController : NetworkBehaviour
 {
@@ -13,7 +17,6 @@ public class GameController : NetworkBehaviour
     public InputReader inputs;
     public TestRelay relayStarter;
     public GameObject inputField;
-    public Vivox VivoxManager;
 
     public Transform rh;
     public Transform lh;
@@ -64,7 +67,7 @@ public class GameController : NetworkBehaviour
         }
         if (inputs.ButtonYDown)
         {
-            Debug.Log(inputField.GetComponent<TMP_InputField>().text);
+            Debug.Log(OwnerClientId);
         }
         //reload the scene if the user presses x
         if(inputs.ButtonXDown)
@@ -91,25 +94,45 @@ public class GameController : NetworkBehaviour
                 if (joinCode == "")
                 {
                     relayStarter.CreateRelay();
-                    VivoxManager.InitializeAsync();
-                    //VivoxManager.LoginToVivoxAsync();
-                    //VivoxManager.JoinEchoChannelAsync();
+                    startVivoxVoice("host");
                 }
                 else
                 {
                     relayStarter.JoinRelay(joinCode);
+                    startVivoxVoice("client");
                 }
             }
             else
             {
                 joinCode = joinCode + pointer.currentLetter;
                 inputField.GetComponent<TMP_InputField>().text = joinCode;
-            }
-            
+            }   
         }
+    }
 
-        
 
+    //the Vivox stuff
+    private async void startVivoxVoice(string userDisplayName)
+    {
+        await InitializeVivoxAsync();
+        await LoginToVivoxAsync(userDisplayName);
+        await VivoxService.Instance.JoinEchoChannelAsync("Lobby", ChatCapability.AudioOnly, null);
+            //string channelName, ChatCapability chatCapability, ChannelOptions channelOptions = null)
+    }
+
+    public async Task InitializeVivoxAsync()
+    {
+        await UnityServices.InitializeAsync();
+        await AuthenticationService.Instance.SignInAnonymouslyAsync();
+        await VivoxService.Instance.InitializeAsync();
+    }
+
+    public async Task LoginToVivoxAsync(string userDisplayName)
+    {
+        LoginOptions options = new LoginOptions();
+        options.DisplayName = userDisplayName;
+        options.EnableTTS = true;
+        await VivoxService.Instance.LoginAsync(options);
     }
 
     
