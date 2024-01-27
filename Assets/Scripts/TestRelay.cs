@@ -10,6 +10,7 @@ using Unity.Netcode.Transports.UTP;
 
 public class TestRelay : MonoBehaviour
 {
+    public string relayRoomCode;
     // Start is called before the first frame update
     private async void Start()
     {
@@ -27,8 +28,9 @@ public class TestRelay : MonoBehaviour
         try
         {
             Allocation allocation = await RelayService.Instance.CreateAllocationAsync(3);
-            string joinCode = await RelayService.Instance.GetJoinCodeAsync(allocation.AllocationId);
-            Debug.Log(joinCode);
+            relayRoomCode = await RelayService.Instance.GetJoinCodeAsync(allocation.AllocationId);
+            Variables.joinCode = relayRoomCode;
+            Debug.Log(relayRoomCode);
 
             NetworkManager.Singleton.GetComponent<UnityTransport>().SetHostRelayData(
                 allocation.RelayServer.IpV4,
@@ -48,6 +50,7 @@ public class TestRelay : MonoBehaviour
     public async void JoinRelay(string joinCode) {
         try
         {
+            relayRoomCode = joinCode;
             Debug.Log("Joining Relay with " + joinCode);
             JoinAllocation joinAllocation = await RelayService.Instance.JoinAllocationAsync(joinCode);
             NetworkManager.Singleton.GetComponent<UnityTransport>().SetClientRelayData(

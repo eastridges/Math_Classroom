@@ -152,7 +152,9 @@ Library: lib_burst_generated
 --output=C:\Users\sam\Documents\Unity_Stuff\NetCodeTest\Temp\StagingArea\tempburstlibs\arm64-v8a\lib_burst_generated
 --root-assembly=C:\Users\sam\Documents\Unity_Stuff\NetCodeTest\Temp\StagingArea\Data\Managed\UnityEngine.UI.dll
 --root-assembly=C:\Users\sam\Documents\Unity_Stuff\NetCodeTest\Temp\StagingArea\Data\Managed\UnityEngine.SpatialTracking.dll
+--root-assembly=C:\Users\sam\Documents\Unity_Stuff\NetCodeTest\Temp\StagingArea\Data\Managed\Unity.Multiplayer.Tools.NetworkProfiler.Runtime.dll
 --root-assembly=C:\Users\sam\Documents\Unity_Stuff\NetCodeTest\Temp\StagingArea\Data\Managed\Oculus.Platform.dll
+--root-assembly=C:\Users\sam\Documents\Unity_Stuff\NetCodeTest\Temp\StagingArea\Data\Managed\Unity.Services.Core.Internal.dll
 --root-assembly=C:\Users\sam\Documents\Unity_Stuff\NetCodeTest\Temp\StagingArea\Data\Managed\Assembly-CSharp.dll
 --root-assembly=C:\Users\sam\Documents\Unity_Stuff\NetCodeTest\Temp\StagingArea\Data\Managed\Meta.WitAi.dll
 --root-assembly=C:\Users\sam\Documents\Unity_Stuff\NetCodeTest\Temp\StagingArea\Data\Managed\Unity.Services.Vivox.dll
@@ -176,10 +178,10 @@ Library: lib_burst_generated
 --root-assembly=C:\Users\sam\Documents\Unity_Stuff\NetCodeTest\Temp\StagingArea\Data\Managed\Meta.WitAi.Lib.dll
 --root-assembly=C:\Users\sam\Documents\Unity_Stuff\NetCodeTest\Temp\StagingArea\Data\Managed\Unity.Multiplayer.Tools.MetricTypes.dll
 --root-assembly=C:\Users\sam\Documents\Unity_Stuff\NetCodeTest\Temp\StagingArea\Data\Managed\Meta.Voice.Hub.Runtime.dll
+--root-assembly=C:\Users\sam\Documents\Unity_Stuff\NetCodeTest\Temp\StagingArea\Data\Managed\Unity.Services.Authentication.PlayerAccounts.dll
 --root-assembly=C:\Users\sam\Documents\Unity_Stuff\NetCodeTest\Temp\StagingArea\Data\Managed\Unity.Multiplayer.Tools.NetStats.dll
 --root-assembly=C:\Users\sam\Documents\Unity_Stuff\NetCodeTest\Temp\StagingArea\Data\Managed\Unity.Multiplayer.Tools.NetStatsMonitor.Implementation.dll
 --root-assembly=C:\Users\sam\Documents\Unity_Stuff\NetCodeTest\Temp\StagingArea\Data\Managed\VoiceSDK.Runtime.dll
---root-assembly=C:\Users\sam\Documents\Unity_Stuff\NetCodeTest\Temp\StagingArea\Data\Managed\Unity.Services.Core.Internal.dll
 --root-assembly=C:\Users\sam\Documents\Unity_Stuff\NetCodeTest\Temp\StagingArea\Data\Managed\Unity.Collections.dll
 --root-assembly=C:\Users\sam\Documents\Unity_Stuff\NetCodeTest\Temp\StagingArea\Data\Managed\Unity.Timeline.dll
 --root-assembly=C:\Users\sam\Documents\Unity_Stuff\NetCodeTest\Temp\StagingArea\Data\Managed\Oculus.Interaction.OVR.Samples.dll
@@ -203,10 +205,10 @@ Library: lib_burst_generated
 --root-assembly=C:\Users\sam\Documents\Unity_Stuff\NetCodeTest\Temp\StagingArea\Data\Managed\Oculus.LipSync.dll
 --root-assembly=C:\Users\sam\Documents\Unity_Stuff\NetCodeTest\Temp\StagingArea\Data\Managed\Unity.Multiplayer.Tools.NetStatsReporting.dll
 --root-assembly=C:\Users\sam\Documents\Unity_Stuff\NetCodeTest\Temp\StagingArea\Data\Managed\Oculus.Spatializer.dll
---root-assembly=C:\Users\sam\Documents\Unity_Stuff\NetCodeTest\Temp\StagingArea\Data\Managed\Unity.Multiplayer.Tools.NetworkProfiler.Runtime.dll
 --root-assembly=C:\Users\sam\Documents\Unity_Stuff\NetCodeTest\Temp\StagingArea\Data\Managed\Unity.Services.Core.Analytics.dll
 --root-assembly=C:\Users\sam\Documents\Unity_Stuff\NetCodeTest\Temp\StagingArea\Data\Managed\Unity.Multiplayer.Tools.Adapters.Ngo1.dll
 --root-assembly=C:\Users\sam\Documents\Unity_Stuff\NetCodeTest\Temp\StagingArea\Data\Managed\Unity.XR.Management.dll
+--root-assembly=C:\Users\sam\Documents\Unity_Stuff\NetCodeTest\Temp\StagingArea\Data\Managed\Unity.Services.Core.dll
 --root-assembly=C:\Users\sam\Documents\Unity_Stuff\NetCodeTest\Temp\StagingArea\Data\Managed\Meta.VoiceSDK.Mic.Other.dll
 --root-assembly=C:\Users\sam\Documents\Unity_Stuff\NetCodeTest\Temp\StagingArea\Data\Managed\Unity.Multiplayer.Samples.Utilities.dll
 --root-assembly=C:\Users\sam\Documents\Unity_Stuff\NetCodeTest\Temp\StagingArea\Data\Managed\Unity.Profiling.Core.dll
@@ -217,13 +219,12 @@ Library: lib_burst_generated
 --root-assembly=C:\Users\sam\Documents\Unity_Stuff\NetCodeTest\Temp\StagingArea\Data\Managed\Unity.Services.Core.Threading.dll
 --root-assembly=C:\Users\sam\Documents\Unity_Stuff\NetCodeTest\Temp\StagingArea\Data\Managed\Facebook.Wit.Dictation.dll
 --root-assembly=C:\Users\sam\Documents\Unity_Stuff\NetCodeTest\Temp\StagingArea\Data\Managed\UnityEngine.XR.LegacyInputHelpers.dll
---root-assembly=C:\Users\sam\Documents\Unity_Stuff\NetCodeTest\Temp\StagingArea\Data\Managed\Unity.Services.Core.dll
+--root-assembly=C:\Users\sam\Documents\Unity_Stuff\NetCodeTest\Temp\StagingArea\Data\Managed\ChatChannelSample.dll
 --root-assembly=C:\Users\sam\Documents\Unity_Stuff\NetCodeTest\Temp\StagingArea\Data\Managed\Unity.Services.Core.Networking.dll
 --root-assembly=C:\Users\sam\Documents\Unity_Stuff\NetCodeTest\Temp\StagingArea\Data\Managed\Unity.Tutorials.Core.dll
 --root-assembly=C:\Users\sam\Documents\Unity_Stuff\NetCodeTest\Temp\StagingArea\Data\Managed\Meta.WitAi.TTS.dll
 --root-assembly=C:\Users\sam\Documents\Unity_Stuff\NetCodeTest\Temp\StagingArea\Data\Managed\Unity.Services.Core.Registration.dll
 --root-assembly=C:\Users\sam\Documents\Unity_Stuff\NetCodeTest\Temp\StagingArea\Data\Managed\Unity.Multiplayer.Tools.Initialization.dll
---root-assembly=C:\Users\sam\Documents\Unity_Stuff\NetCodeTest\Temp\StagingArea\Data\Managed\ChatChannelSample.dll
 --assembly-folder=C:\Users\sam\Documents\Unity_Stuff\NetCodeTest\Temp\StagingArea\Data\Managed\
 --pdb-search-paths=Temp/ManagedSymbols/
 --method=Unity.Networking.Transport.Relay.RelayNetworkProtocol, Unity.Networking.Transport, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null::Update(System.Int64, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|Unity.Networking.Transport.NetworkSendInterface&, Unity.Networking.Transport, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null|Unity.Networking.Transport.NetworkSendQueueHandle&, Unity.Networking.Transport, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null|System.IntPtr, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089)--841777d5e4a6990cc60165d5be1412ba
